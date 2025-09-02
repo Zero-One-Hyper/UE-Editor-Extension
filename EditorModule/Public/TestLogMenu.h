@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "MenuItem.h"
-#include "UObject/NoExportTypes.h"
 #include "TestLogMenu.generated.h"
 
 /**

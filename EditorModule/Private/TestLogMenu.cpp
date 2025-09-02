@@ -3,13 +3,15 @@
 
 #include "TestLogMenu.h"
 
+#include "MenuManager.h"
+
 UTestLogMenu::UTestLogMenu()
 {
-	//在构造函数中初始化菜单  路径     ToolTip
-	InitMenu("CustomTools/First/Second/Final", "TestLogMenu ToolTip");
+	InitMenu("CustomTool/Test", "Test Editor Extension");
 }
+
 
 void UTestLogMenu::OnMenuClick()
 {
-	UE_LOG(LogTemp, Error, TEXT("OnMenuClick"));
+	UE_LOG(MenuManagerLog, Warning, TEXT("测试编辑器扩展模块点击"));
 }
